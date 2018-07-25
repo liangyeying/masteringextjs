@@ -27,6 +27,16 @@ Ext.application({
         Ext.DomHelper.insertFirst(Ext.query('.x-mask-msg')[0], {
             cls: 'x-splash-icon'
         })
+        var task = new Ext.util.DelayedTask(function() {
+            // Ext.getBody().unmask();
+
+            splashscreen.fadeOut({
+                duration: 1000,
+                remove: true
+            })
+        });
+        task.delay(2000);
+
     },
     splashscreen:{
 
