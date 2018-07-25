@@ -1,0 +1,13 @@
+.x-mask.splashscreen {
+    background-color: white;
+    opacity: 1;
+}
+
+.x-mask.splashscreen, .x-mask-msg.splashscreen div {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 30px 5px 5px 5px;
+    border: none;
+    background-color: transparent;
+    background-position: top center;
+}
