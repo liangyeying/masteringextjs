@@ -1,4 +1,4 @@
-package com.tts.exam.core.result;
+package com.leong.masteringextjs.result;
 
 import org.springframework.util.Assert;
 

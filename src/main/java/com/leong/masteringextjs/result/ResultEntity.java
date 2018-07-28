@@ -1,4 +1,4 @@
-package com.tts.exam.core.result;
+package com.leong.masteringextjs.result;
 
 import java.io.Serializable;
 
@@ -18,7 +18,6 @@ import lombok.NoArgsConstructor;
  *
  */
 @AllArgsConstructor
-@NoArgsConstructor
 public class ResultEntity<T> implements Serializable {
 
 	private static final long serialVersionUID = 2172855571451440092L;
@@ -35,6 +34,9 @@ public class ResultEntity<T> implements Serializable {
 	 */
 	private T data;
 
+	public ResultEntity() {
+
+	}
 	public ResultEntity(T data) {
 		super();
 		this.data = data;
@@ -45,6 +47,7 @@ public class ResultEntity<T> implements Serializable {
 		this.message = e.getMessage();
 		this.code = ResultCodeEnum.FAIL.code();
 	}
+
 
 	public int getCode() {
 		return code;

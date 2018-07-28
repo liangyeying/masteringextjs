@@ -1,4 +1,4 @@
-package com.tts.exam.core.result;
+package com.leong.masteringextjs.result;
 
 /**
  * 响应码枚举，参考HTTP状态码的语义.
